@@ -1,3 +1,5 @@
+import BinaryLiteralMacro.b
+
 object SecretHandshake {
 
     val stringFlags = List(
@@ -17,8 +19,6 @@ object SecretHandshake {
             list
         }
     }
-
-    def b(binary: String): Int = Integer.parseInt(binary, 2)
 
     case class StringFlag(code: Int, string: String) {
         def check(flags: Int): Boolean = (flags & code) != 0
