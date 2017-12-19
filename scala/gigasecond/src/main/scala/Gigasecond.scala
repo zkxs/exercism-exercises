@@ -5,7 +5,7 @@ object Gigasecond {
 
   def gigasecond = 1000000000
 
-  def add(startDate: LocalDate): LocalDateTime = ???
+  def add(startDate: LocalDate): LocalDateTime = add(startDate.atStartOfDay)
 
-  def add(startDateTime: LocalDateTime): LocalDateTime = ???
+  def add(startDateTime: LocalDateTime): LocalDateTime = startDateTime.plusSeconds(gigasecond)
 }
