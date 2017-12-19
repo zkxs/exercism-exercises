@@ -1,1 +1,5 @@
+# SBT output
 target/
+
+# IntelliJ stuff
+.idea/
